@@ -17,5 +17,9 @@ describe('Dinosaur', function() {
     assert.strictEqual('herbivorous', dinosaur.type)
   });
 
+  it('should display dinosaur offspring', function() {
+    assert.strictEqual(20, dinosaur.numOfOffspring)
+  });
+
 
 });
