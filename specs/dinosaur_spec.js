@@ -9,10 +9,13 @@ describe('Dinosaur', function() {
   dinosaur = new Dinosaur('triceratops', 'herbivorous', 20)
   });
 
-  it ('should show dinosaur name', function(){
+  it('should display dinosaur name', function(){
     assert.strictEqual('triceratops', dinosaur.name)
   });
 
+  it('should display dinosaur type', function(){
+    assert.strictEqual('herbivorous', dinosaur.type)
+  });
 
 
 });
