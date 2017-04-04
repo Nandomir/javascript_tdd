@@ -20,5 +20,10 @@ describe('Park', function(){
     assert.strictEqual(undefined, park.listOfDinosaurs[0])
   });
 
+  it('should add a dinosaur to the park', function() {
+    park.add(triceratops);
+    assert.strictEqual(triceratops, park.listOfDinosaurs[0])
+  })
+
 
 })
