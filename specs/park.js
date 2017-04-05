@@ -25,5 +25,13 @@ describe('Park', function(){
     assert.strictEqual(triceratops, park.listOfDinosaurs[0])
   })
 
+  it('should remove carnivorous dinosaurs', function() {
+    park.add(triceratops);
+    park.add(velociraptor);
+    park.add(tyrannosaurus);
+
+    assert.strictEqual(triceratops, park.removeCarnivours())
+  });
+
 
 })
