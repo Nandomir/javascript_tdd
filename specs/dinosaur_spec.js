@@ -6,7 +6,7 @@ describe('Dinosaur', function() {
   var dinosaur;
 
   beforeEach(function() {
-  dinosaur = new Dinosaur('triceratops', 'herbivorous', 20)
+  dinosaur = new Dinosaur('triceratops', 'herbivorous', 1)
   });
 
   it('should display dinosaur name', function(){
@@ -18,7 +18,7 @@ describe('Dinosaur', function() {
   });
 
   it('should display dinosaur offspring', function() {
-    assert.strictEqual(20, dinosaur.numOfOffspring)
+    assert.strictEqual(1, dinosaur.numOfOffspring)
   });
 
 

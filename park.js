@@ -15,8 +15,20 @@ Park.prototype = {
     this.herbivore = this.listOfDinosaurs.filter(function(dinosaur){ return (dinosaur.type === 'herbivorous')
     })
 
-    console.log(this.herbivore)
+    // console.log(this.herbivore)
     return this.herbivore[0];
+  },
+
+
+  avgOffspringMoreThanTwo: function() {
+    this.moreThanTwo = new Array();
+
+    this.moreThanTwo = this.listOfDinosaurs.filter(function(dinosaur) { return (dinosaur.numOfOffspring > 2) 
+    })
+
+    // console.log(this.moreThanTwo)
+
+    return this.moreThanTwo.length;
   }
 
   }

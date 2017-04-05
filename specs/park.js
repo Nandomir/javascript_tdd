@@ -11,9 +11,9 @@ describe('Park', function(){
 
   beforeEach(function(){
     park = new Park();
-    triceratops = new Dinosaur('triceratops', 'herbivorous', 20);
-    velociraptor = new Dinosaur('velociraptor', 'carnivorous', 30);
-    tyrannosaurus = new Dinosaur('tyrannosaurus', 'carnivorous', 5);
+    triceratops = new Dinosaur('triceratops', 'herbivorous', 2);
+    velociraptor = new Dinosaur('velociraptor', 'carnivorous', 5);
+    tyrannosaurus = new Dinosaur('tyrannosaurus', 'carnivorous', 3);
   })
 
   it('should start an empty park', function() {
@@ -31,7 +31,15 @@ describe('Park', function(){
     park.add(tyrannosaurus);
 
     assert.strictEqual(triceratops, park.removeCarnivours())
-  });
+  })
+
+  it('should get all the dinosaurs with an offspring > 2', function() {
+    park.add(triceratops);
+    park.add(velociraptor);
+    park.add(tyrannosaurus);
+
+    assert.strictEqual(2, park.avgOffspringMoreThanTwo())
+  })
 
 
 })
