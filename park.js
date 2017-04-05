@@ -29,6 +29,13 @@ Park.prototype = {
     // console.log(this.moreThanTwo)
 
     return this.moreThanTwo.length;
+  },
+
+  dinosaurBreeding: function(dinosaur) {
+    with(dinosaur) {
+      return dinosaur.numOfOffspring += 1
+    }
+
   }
 
   }

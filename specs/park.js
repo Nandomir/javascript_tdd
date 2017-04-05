@@ -41,5 +41,9 @@ describe('Park', function(){
     assert.strictEqual(2, park.avgOffspringMoreThanTwo())
   })
 
+  it('number of dinosaurs after year one, starting with 1 dinosaur', function() {
+    assert.strictEqual(6, park.dinosaurBreeding(velociraptor))
+  })
+
 
 })
